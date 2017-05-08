@@ -4,17 +4,17 @@ using System.Globalization;
 
 namespace Gigs1.ViewModels
 {
-    public class FutureDate : ValidationAttribute
+    public class ValidTime : ValidationAttribute
     {
         public override bool IsValid(object value)
         {
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(Convert.ToString(value),
-                "dd mmm yyyy",
-                CultureInfo.CurrentCulture, 
+                "HH:mm",
+                CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
                 out dateTime);
-            return (isValid && dateTime > DateTime.Now);
+            return (isValid);
         }
     }
 }
