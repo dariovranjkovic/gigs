@@ -10,7 +10,7 @@ namespace Gigs1.ViewModels
         {
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(Convert.ToString(value),
-                "dd mmm yyyy",
+                "d MMM yyyy",
                 CultureInfo.CurrentCulture, 
                 DateTimeStyles.None,
                 out dateTime);
