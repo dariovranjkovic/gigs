@@ -222,6 +222,10 @@
     <Compile Include="Migrations\201705042154016_AddForeignKeyOropertiesToGig.Designer.cs">
       <DependentUpon>201705042154016_AddForeignKeyOropertiesToGig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705152119000_AddNameToApplicationUser.cs" />
+    <Compile Include="Migrations\201705152119000_AddNameToApplicationUser.Designer.cs">
+      <DependentUpon>201705152119000_AddNameToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -321,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705042154016_AddForeignKeyOropertiesToGig.resx">
       <DependentUpon>201705042154016_AddForeignKeyOropertiesToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705152119000_AddNameToApplicationUser.resx">
+      <DependentUpon>201705152119000_AddNameToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
