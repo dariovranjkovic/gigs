@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -7,7 +7,6 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 30px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -28,4 +27,41 @@ textarea {
 
 .field-validation-error span {
     color: red;
+}
+li.gigs {
+    position: relative;
+    margin-bottom: 30px;
+    list-style: none;
+}
+li.gigs .details {
+    position: absolute;
+    top: 0px;
+    left: 70px;    
+}
+
+li.gigs .date {
+    background: #2196f3;
+    color:#fff;
+    text-align: center;
+    width: 60px;
+    border-radius: 5px;
+}
+
+li.gigs .date .month {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+    li.gigs .date .day {
+        background: #eee;
+        color: #333;
+        font-size: 20px;
+    }
+li.gigs .details .artist {
+    font-weight: bold;
+    display: block;    
+}
+li.gigs .details .genre {
+    font-size: 15px;   
 }
